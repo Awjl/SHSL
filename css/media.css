@@ -1,0 +1,113 @@
+/*
+* 1200px 以上
+*/
+@media screen and (min-width: 1200px) {
+  .heard-left{
+    display: none;
+  } 
+}
+/*
+*1200px-1080px
+*/
+@media screen and (max-width: 1200px){
+  .home-list .item-big{
+    width: 700px;
+  }
+  .home-list .item-litter{
+    width: 420px;
+  }
+}
+@media screen and (max-width: 1160px){
+  .home-list .item-big{
+    width: 100%
+  }
+  .home-list .item-litter{
+    width: 50%;
+  }
+}
+/*
+*1080px-990px
+*/
+@media screen and (max-width: 1080px){
+  .banner .logo{
+    height: 65px;
+  }
+  .banner .logo-wrap {
+    height:65px;
+  }
+  .banner .pc-heard{
+    top: 65px;
+  }
+  .pc-heard .pc-nav{
+    justify-content: center;
+  }
+  .banner .pc-heard {
+    height: 60px;
+  }
+  .pc-heard .pc-nav ul{
+    height: 60px;
+  }
+  .pc-heard .pc-nav ul li {
+    height: 60px;
+    line-height: 50px;
+  }
+  .pc-heard .heard-left{
+    display: none;
+  } 
+}
+/*
+*鏈€澶�990px锛屽墠闈㈡渶澶�1080px锛屽悗闈㈡渶澶�767px
+*/
+@media screen and (max-width: 990px){
+ /* 重点 */
+  .logo .logoname {
+    display: none;
+  }
+  .logo .logo-wrap {
+    justify-content:center;
+    text-align: center;
+  }
+  .logo .logo-wrap img{
+    width: 80%;
+  }
+}
+/*
+*鏈€澶�767px锛屽墠闈㈡渶澶�990px锛屽悗闈㈡渶澶�600px
+*/
+@media screen and (max-width: 767px){
+ /* 重点 */
+ .banner .pc-heard{
+   display: none;
+ }
+ .logo .logo-wrap .logoimg {
+   width: 60%;
+ }
+ .logo .logo-wrap img{
+  width:100%;
+}
+ .logo .logo-wrap {
+  width: 100%;
+  justify-content:space-around;
+}
+ .banner .logo-wrap .nav-move{
+   display: block;
+ }
+}
+/*
+*鏈€澶�600px锛屽墠闈㈡渶澶�767px锛屽悗闈㈡渶澶�500px
+*/
+@media screen and (max-width:600px){
+
+}
+/*
+*鏈€澶�500px锛屽墠闈㈡渶澶�600px锛屽悗闈㈡渶澶�414px
+*/
+@media screen and (max-width:500px){
+
+}
+/*
+*鏈€澶�414px锛屽墠闈㈡渶澶�500px
+*/
+@media screen and (max-width: 414px){
+
+}

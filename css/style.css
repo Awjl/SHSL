@@ -1,0 +1,153 @@
+/* 首页 */
+img {
+  width: 100%;
+}
+.wrap{
+  max-width: 1200px;
+  height: auto;
+  margin: auto;
+  position: relative;
+}
+.banner{
+  position: relative;
+  height: auto;
+}
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #002C76;
+  width: 100%;
+  height: 144px;
+  z-index: 9999;
+}
+.logo-wrap {
+  height: 144px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pc-heard {
+  position: absolute;
+  top: 144px;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: rgba(0,44,118, 0.7);
+  z-index: 9999;
+}
+.nav-move {
+  display: none;
+}
+.pc-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pc-nav ul {
+  width: 800px;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.pc-nav ul li {
+  width: 100px;
+  height: 80px;
+  line-height: 70px;
+  text-align: center;
+  margin-right: 28px;
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+.pc-nav ul li.act{
+  color: #000;
+  background: url(../images/nav-banner.png) no-repeat center center;
+}
+.heard-left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heard-left a{
+  margin-left: 11px;
+}
+.heard-left div{
+  width: 170px;
+  height: 30px;
+  border:1px solid #fff;
+  display: flex;
+  border-radius: 15px;
+  padding: 0 10px;
+}
+.heard-left div img {
+  width: 18px;
+  height: 18px;
+  margin-top: 6px;
+}
+.heard-left div input{
+  width: 130px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  color: #fff;
+}
+.swiper-container img{
+  width: 100%;
+}
+/* 移动端标题 */
+.headerm {
+  opacity: 0;
+  position: absolute;
+  top:-300%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: rgba(0,44,118, 0.7);
+  z-index: 99;
+  transition: all 1s;
+}
+.headerm ul{
+  width:90%;
+  margin: 0 auto;
+}
+.headerm li{
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+/* 列表 */
+.home-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+.item-big ,.item-litter {
+  margin-bottom: 40px;
+  position: relative;
+}
+.big-text,.litter-text{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 464px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.big-text p:nth-child(1) {
+  font-size: 30px;
+  margin-bottom: 14px;
+}
+.big-text p:nth-child(2) {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+/* .item-litter>.big-text p:nth-child(1){
+  
+} */
