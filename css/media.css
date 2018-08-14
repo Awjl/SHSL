@@ -51,9 +51,22 @@
     height: 60px;
     line-height: 50px;
   }
+  .pc-heard .pc-nav ul li a {
+    height: 60px;
+    line-height: 50px;
+  }
   .pc-heard .heard-left{
     display: none;
   } 
+  .footerbox .footeritem {
+    width: 25% !important;
+  }
+  .solution .solutionitem {
+    width: 49%;
+  }
+  .casebox .caselist {
+    width: 49%;
+  }
 }
 /*
 *鏈€澶�990px锛屽墠闈㈡渶澶�1080px锛屽悗闈㈡渶澶�767px
@@ -69,6 +82,9 @@
   }
   .logo .logo-wrap img{
     width: 80%;
+  }
+  .consultationbox .item{
+    width: 49% !important;
   }
 }
 /*
@@ -92,6 +108,9 @@
  .banner .logo-wrap .nav-move{
    display: block;
  }
+ .item-big .big-text,.item-litter .big-text{
+    width: 80%;
+  }
 }
 /*
 *鏈€澶�600px锛屽墠闈㈡渶澶�767px锛屽悗闈㈡渶澶�500px

@@ -170,12 +170,16 @@ img
 }
 
 /* 修改placeholder字体颜色 */
-inpu1t::-moz-placeholder { color:#444444; opacity: 1; }
-inpu1t:-moz-placeholder { color:#444444;opacity: 1; }
-inpu1t::-webkit-input-placeholder  { color:#444444; }
-inpu1t:-ms-input-placeholder { color:#444444; }
-textare1a::-moz-placeholder { color:#444444;opacity: 1; }
-textare1a:-moz-placeholder { color:#444444; opacity: 1;}
-textare1a::-webkit-input-placeholder  { color:#444444; }
-textare1a:-ms-input-placeholder  { color:#444444; }
+inpu1t::-moz-placeholder { color:#fff; opacity: 1; }
+inpu1t:-moz-placeholder { color:#fff;opacity: 1; }
+inpu1t::-webkit-input-placeholder  { color:#fff; }
+inpu1t:-ms-input-placeholder { color:#fff; }
+textare1a::-moz-placeholder { color:#fff;opacity: 1; }
+textare1a:-moz-placeholder { color:#fff; opacity: 1;}
+textare1a::-webkit-input-placeholder  { color:#fff; }
+textare1a:-ms-input-placeholder  { color:#fff; }
 
+.he20{height: 20px;}
+.he50{height: 50px;}
+.he80{height: 80px;}
+.he100{height: 100px;}
