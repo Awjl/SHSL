@@ -28,3 +28,11 @@ $('.uplodebtn').click(function() {
 $('.ejectbox').click(function() {
   $(this).css('display','none')
 })
+// 产品中心
+$('.wrap-productnav div').click(function() {
+  $('.wrap-productnav div').find('span').removeClass('liact')
+  console.log($(this))
+  $(this).find('span').addClass('liact')
+  $('.productclassification-box>div').eq($(this).index()).removeClass('hide').siblings().addClass('hide')
+  // productclassification-box
+})
