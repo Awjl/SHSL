@@ -484,10 +484,32 @@ footer{
 .page {
   width: 250px;
   height: 30px;
-  margin: 0 auto;
+  margin: 30px auto 0;
   display: flex;
   justify-content:space-between;
   align-items: center;
+}
+.page i{
+  display: block;
+  width: 14px;
+  height: 24px;
+}
+.page i img {
+  height: 100%;;
+}
+.page span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  color: #032F7D;
+  cursor: pointer;
+}
+.page span.page-act{
+  background: #002C76;
+  border-radius: 5px;
+  color: #fff;
 }
 /* 新闻详情页 */
 .newdetails .newdetailstitel{
@@ -800,6 +822,9 @@ footer{
 .technology-icon {
   padding: 20px;
   background: url(../images/right-act.png) no-repeat center center;
+}
+.technologylist {
+  overflow: hidden;
 }
 .technologylist>div{
   justify-content:space-between;
