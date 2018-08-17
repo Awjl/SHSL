@@ -67,6 +67,13 @@
   .casebox .caselist {
     width: 49%;
   }
+  .developmentlist .developmentlistleft{
+    left: 0px;
+  }
+  .developmentlist  .developmentlistright{
+    right: 0px;
+  }
+
 }
 /*
 *鏈€澶�990px锛屽墠闈㈡渶澶�1080px锛屽悗闈㈡渶澶�767px
@@ -175,6 +182,17 @@
   }
   .fillbox .inp{
     width: 100%;
+  }
+  .developmentlist .developmentlistleft{
+    left: 0px;
+    display: none;
+  }
+  .developmentlist  .developmentlistright{
+    right: 0px;
+    display: none;
+  }
+  .developmentItembox .developmentItem{
+    width:350px;
   }
 }
 /*

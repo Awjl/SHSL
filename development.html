@@ -90,8 +90,11 @@
   <div class="he100"></div>
   <div class="development">
     <div class="developmentlist wrap">
+      <div class="developmentlistleft">
+        <img src="images/aboutus/left.png" alt="">
+      </div>
       <div class="developmentItembox">
-        <div class="developmentlistbox">
+        <div class="developmentlistbox" id="io">
           <div class="developmentItem">
             <div class="developmentName">2014年</div>
             <div class="line">
@@ -132,10 +135,83 @@
             <div class="developmentCenter">集团投资引进矿物质绝缘电缆 生产线，矿物质电缆产业园暨 新行政办公大楼开工
             </div>
           </div>
+          <div class="developmentItem">
+            <div class="developmentName">2016年</div>
+            <div class="line">
+              <span class="linedian"></span>
+            </div>
+            <div class="developmentCenter">集团投资引进矿物质绝缘电缆 生产线，矿物质电缆产业园暨 新行政办公大楼开工
+            </div>
+          </div>
+          <div class="developmentItem">
+            <div class="developmentName">2016年</div>
+            <div class="line">
+              <span class="linedian"></span>
+            </div>
+            <div class="developmentCenter">集团投资引进矿物质绝缘电缆 生产线，矿物质电缆产业园暨 新行政办公大楼开工
+            </div>
+          </div>
+
         </div>
       </div>
-
+      <div class="developmentlistright">
+        <img src="images/aboutus/right.png" alt="">
+      </div>
     </div>
+    <script>
+      $(function () {
+        $('.developmentlistbox').width($('.developmentItem').width() * $('.developmentlistbox>div').length)
+        function judge() {
+          var startx;
+          var endx;
+          var el = document.getElementById('io');//触摸区域。  
+          function cons() {
+            if (startx > endx) {
+              var left = $('.developmentlistbox').css('left').replace(/\s+|px/gi, "") - $('.developmentItem').width()
+              if (-left >= $('.developmentlistbox').width() - $('.developmentItembox').width()) {
+                return
+              }
+              $('.developmentlistbox').css('left', left + 'px')
+            } else {
+              var right = Number($('.developmentlistbox').css('left').replace(/\s+|px/gi, "")) + Number($('.developmentItem').width())
+              if (right > 0) {
+                $('.developmentlistbox').css('left', '0px')
+                return
+              }
+              $('.developmentlistbox').css('left', right + 'px')
+            }
+          }
+
+          el.addEventListener('touchstart', function (e) {
+            var touch = e.changedTouches;
+            startx = touch[0].clientX;
+            starty = touch[0].clientY;
+          });
+          el.addEventListener('touchend', function (e) {
+            var touch = e.changedTouches;
+            endx = touch[0].clientX;
+            endy = touch[0].clientY;
+            cons();
+          });
+        }
+        judge();
+        $('.developmentlistleft').click(function () {
+          var _left = $('.developmentlistbox').css('left').replace(/\s+|px/gi, "") - $('.developmentItem').width()
+          if (-_left >= $('.developmentlistbox').width() - $('.developmentItembox').width()) {
+            return
+          }
+          $('.developmentlistbox').css('left', _left + 'px')
+        })
+        $('.developmentlistright').click(function () {
+          var _right = Number($('.developmentlistbox').css('left').replace(/\s+|px/gi, "")) + Number($('.developmentItem').width())
+          if (_right > 0) {
+            $('.developmentlistbox').css('left', '0px')
+            return
+          }
+          $('.developmentlistbox').css('left', _right + 'px')
+        })
+      })  
+    </script>
   </div>
   <div class="he80"></div>
   <footer>

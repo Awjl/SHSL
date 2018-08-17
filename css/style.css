@@ -670,26 +670,44 @@ footer{
   width: 100%;
   height: 250px;
   background: url(../images/aboutus/4.png) no-repeat center center;
-  position: relative;
 }
 .developmentlist {
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  position: relative;
+}
+.developmentlistleft,.developmentlistright{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  height: 100%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.developmentlistleft{
+  left: -100px;
+}
+.developmentlistright {
+  right: -100px;
 }
 .developmentItembox {
   width:100%;
   height: 100%;
-  overflow-x: auto;
-  box-sizing: content-box;
+  position: relative;
+  overflow: hidden;
 }
 .developmentlistbox{
-  display: flex;
+  position: absolute;
+  left: 0;
+  top:0;
+  transition: all 1s;
 }
  .developmentItem{
   width: 400px;
   height: 250px;
-  /* float: left; */
+  float: left;
   display: flex;
   flex-direction: column;
   justify-content: center;
