@@ -6,6 +6,8 @@ img {
   max-width: 1200px;
   height: auto;
   margin: auto;
+  padding:0 10px;
+  box-sizing: border-box;
 }
 .banner{
   position: relative;
@@ -113,7 +115,7 @@ img {
   width: 100%;
   height: auto;
   background: rgba(0,44,118, 0.7);
-  z-index: 99;
+  z-index: 99999;
   transition: all 1s;
 }
 .headerm ul{
@@ -163,7 +165,7 @@ footer{
   max-width: 100px;
 }
 .footer-title {
-  font-size: 20px;
+  font-size: 16px;
   height: 50px;
   line-height: 50px;
 }
@@ -258,6 +260,7 @@ footer{
   padding: 30px;
   box-sizing: border-box;
   color: #002C76;
+  transition: all 1s;
 }
 .itemTitle p {
   height: 100px;
@@ -276,6 +279,8 @@ footer{
   font-size: 10px;
   display: flex;
   align-items: center;
+  transition: all 1s;
+
 }
 .itemTitle a i{
   display:block;
@@ -352,7 +357,8 @@ footer{
   margin-right: 10px;
 }
 .solutiondet p{
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 25px;
   color: #4A4A4A;
   margin-bottom: 30px;
 }
@@ -363,8 +369,12 @@ footer{
 .solutiondetlist {
   display: flex;
   justify-content:space-between;
-  font-size: 18px;
+  flex-wrap: wrap;
+  font-size: 16px;
   color: #4A4A4A;
+}
+.solutiondetlist span{
+  display:block;
 }
 /* 工程案例 */
 .casebox{
@@ -395,9 +405,13 @@ footer{
   transition: all 1s;
 }
 .caselist-text p:nth-child(1){
+  width: 100%;
   height: 40px;
   line-height: 40px;
   font-size: 22px;
+  overflow: hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
 }
 .caselist-text p:nth-child(2){
   color: #fff;
@@ -413,6 +427,7 @@ footer{
   box-sizing: border-box;
   display: flex;
   justify-content:space-between;
+  flex-wrap: wrap;
   border-bottom: 1px solid #E3E3E3;
   cursor: pointer;
 }
@@ -428,17 +443,24 @@ footer{
   width: 65%;
 }
 .newContentTitle {
-  height: 30px;
-  line-height: 30px;
+
   display: flex;
   justify-content:space-between;
+  flex-wrap: wrap;
 }
-.newContentTitle span{
+.newContentTitle span:nth-child(1){
   font-size: 20px;
   color: #4A4A4A;
+  width: 70%;
+  height: 25px;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
 }
 .newContentTitle span:nth-child(2){
-  font-size: 16px;
+  width:30%;
+  height: 25px;
+  font-size: 14px;
   color: #4A4A4A;
   text-align: right;
 }
@@ -475,7 +497,7 @@ footer{
   color: #4A4A4A;
 }
 .newdetails .newdetailsTime{
-  width:400px;
+  width: 300px;
   margin: 0 auto;
   display: flex;
   justify-content:space-between;
@@ -493,10 +515,12 @@ footer{
 .newback {
   display: flex;
   justify-content:space-between;
+  flex-wrap: wrap;
 }
 .newback a{
   font-size: 16px;
   color: #4A4A4A;
+  margin-bottom: 20px;
 }
 .share{
   display: flex;
@@ -529,7 +553,7 @@ footer{
 }
 .brand-center {
   line-height: 25px;
-  font-size: 16px;
+  font-size: 14px;
   color: #4A4A4A;
   margin:50px 0;
 }
@@ -614,10 +638,14 @@ footer{
 }
 .aboutus-list .aboutus-listone {
   justify-content:space-between;
+  flex-wrap: wrap;
 }
 .aboutus-listtwo {
   justify-content:space-between;
   flex-wrap: wrap;
+}
+.aboutus-listtwo img {
+  width: 100%;
 }
 .technologyitem {
   margin-bottom: 30px;
@@ -699,6 +727,7 @@ footer{
 .speech{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .speechimg {
   width: 30%;
@@ -719,6 +748,8 @@ footer{
   background: #F2F2F2;
   padding: 0 40px;
   margin-bottom: 30px;
+  transition: all 1s;
+  box-sizing: border-box;
 }
 .technology p {
   height: 75px;
@@ -729,9 +760,24 @@ footer{
 .technology p:nth-child(1){
   font-size: 18px;
   color: #4A4A4A;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
 }
-.technology p:nth-child(2){
+.technology:hover {
+  background: #002C76;
+}
+.technology:hover p {
+  color: #fff;
+}
+.technology p:nth-child(2) a{
   color:#002C76;
+}
+.technology:hover p:nth-child(2) a{
+  color: #fff;
+}
+.technology:hover p:nth-child(2) .technology-icon {
+  background: url(../images/right.png) no-repeat center center;
 }
 .technology-icon {
   padding: 20px;
@@ -761,9 +807,11 @@ footer{
 .honor {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .honorlist {
   width: 23%;
+  margin-bottom: 30px;
 }
 .honorname {
   width: 100%;
@@ -781,7 +829,7 @@ footer{
   margin: 20px 0;
 }
 .contactus p {
-  font-size: 16px;
+  font-size: 14px;
   color: #4A4A4A;
   margin: 20px 0;
   line-height: 25px;
@@ -790,9 +838,12 @@ footer{
   position: relative;
 }
 .contactusbox {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   position: absolute;
-  width: 1200px;
-  height: 200px;
+  max-width: 1200px;
+  width: 100%;
   top: -100px;
   left: 0;
   right: 0;
@@ -800,11 +851,7 @@ footer{
   background: #fff;
   box-shadow: 0 0 4px 4px rgba(205,205,205,0.50);
 }
-.contactusbox {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
+
 .contactusbox .contactusboxitem {
   display: flex;
   align-items: center;
@@ -831,7 +878,7 @@ footer{
   transition: all 1s;
 }
 .recruitbox:hover{
-  height: 700px;
+  height: 900px;
 }
 .recruitbox:hover .icon-open{
   background: url(../images/contactus/takeup.png) no-repeat center center;
@@ -968,8 +1015,7 @@ footer{
   left: 0;
   right: 0;
   bottom: 0;
-  width: 30%;
-  max-width: 500px;
+  max-width: 200px;
   height: 200px;
   margin:auto;
   background: #fff;
@@ -1028,6 +1074,20 @@ footer{
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
+  transition: all 1s;
+  cursor: pointer;
+}
+.producitem:hover{
+  background: #002C76;
+}
+.producitem:hover .producitem-name p:nth-child(1){
+  color: #fff;
+}
+.producitem:hover .producitem-name p:nth-child(2) a{
+  color: #fff;
+}
+.producitem:hover .producitem-name p:nth-child(2) .icon-mover {
+  background: url(../images/right.png) no-repeat center center;
 }
 .producitem-img {
   width: 50%;
@@ -1037,7 +1097,7 @@ footer{
   color: #4A4A4A;
   margin-bottom: 30px;
 }
-.producitem-name p:nth-child(2){
+.producitem-name p:nth-child(2) a{
   font-size: 14px;
   color: #002C76;
   width: 100px;
@@ -1070,16 +1130,31 @@ footer{
   padding: 0 40px;
   background: #F2F2F2;
   margin-bottom: 20px;
+  transition: all 1s;
 }
-.productdetails ul li span:nth-child(1){
+.productdetails ul li span{
   font-size: 16px;
   color: #4A4A4A;
   font-weight: bold;
+  width: 70%;
 }
-.productdetails ul li span:nth-child(2){
+.productdetails ul li a{
   font-size: 14px;
   color: #002C76;
 }
+.productdetails ul li:hover{
+  background: #002C76;
+}
+.productdetails ul li:hover span{
+  color: #fff;
+}
+.productdetails ul li:hover  a{
+  color: #fff;
+}
+.productdetails ul li:hover .icon-mover{
+  background: url(../images/right.png) no-repeat center center;
+}
+
 .updown {
   width: 100%;
   height: 50px;
@@ -1129,7 +1204,7 @@ footer{
   color: #002C76;
 }
 .wrap-productnav div.li1 span{
-  width: 100px;
+  width: 100%;
   height: 100px;
   background: url(../images/productlist/1.1.png) no-repeat center center;
   background-size: 100%;
@@ -1141,7 +1216,7 @@ footer{
 
 }
 .wrap-productnav div.li2 span{
-  width: 100px;
+  width: 100%;
   height: 100px;
   background: url(../images/productlist/2.1.png) no-repeat center center;
   background-size: 100%;
@@ -1153,7 +1228,7 @@ footer{
 
 }
 .wrap-productnav div.li3 span{
-  width: 100px;
+  width: 100%;
   height: 100px;
   background: url(../images/productlist/3.1.png) no-repeat center center;
   background-size: 100%;
@@ -1164,7 +1239,7 @@ footer{
   background-size: 100%;
 }
 .wrap-productnav div.li4 span{
-  width: 100px;
+  width: 100%;
   height: 100px;
   background: url(../images/productlist/4.1.png) no-repeat center center;
   background-size: 100%;

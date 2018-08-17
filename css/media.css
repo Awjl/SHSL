@@ -111,6 +111,71 @@
  .item-big .big-text,.item-litter .big-text{
     width: 80%;
   }
+  .wrapbox ul li{
+    margin-right: 10px !important;
+  }
+  .productlist .producitem {
+    width: 100%;
+  }
+  .technologylist .technology {
+    padding: 0 20px;
+    width: 100%;
+  }
+  .wrap-productnav div{
+    width: 70px !important;
+  }
+  .solutiondetlist span {
+    width: 30%;
+    margin-bottom: 30px;
+  }
+  .newlist .newImg {
+    width: 100%;
+  }
+  .newlist  .newContent{
+    width: 100%;
+  }
+  .newContentTitle span{
+    width: 100% !important;
+    margin: 5px 0;
+  }
+  .newContentContent {
+    padding: 0 !important;
+  }
+  .wrapbox {
+    padding:0 15px !important;
+  }
+  .brand .brand-list , .brand .brand-video {
+    width: 100%;
+  }
+  .branditem .brand-name{
+    margin: 10px 0;
+  }
+  .branditem  .brand-center{
+    margin: 10px 0;
+  }
+  .moverbrand .moverItem{
+    width: 49%;
+  }.aboutus-listone .listone-text{
+    padding: 0;
+  }
+  .aboutus-listone .listone-text,.aboutus-listone .listone-img {
+    width: 100%;
+  }
+  .speech .speechimg, .speech .speechcenter{
+    width: 100%;
+  }
+  .honor .honorlist {
+    width: 49%;
+  }
+  .contactusbox .contactusboxitem {
+    width: 45% !important;
+  }
+  .recruit .recruitbox{
+    width: 98%;
+  }
+  .fillbox .inp{
+    width: 100%;
+  }
 }
 /*
 *鏈€澶�600px锛屽墠闈㈡渶澶�767px锛屽悗闈㈡渶澶�500px
