@@ -162,10 +162,17 @@
   }
   .moverbrand .moverItem{
     width: 49%;
-  }.aboutus-listone .listone-text{
+  }
+  .aboutus-listone .listone-text{
     padding: 0;
   }
   .aboutus-listone .listone-text,.aboutus-listone .listone-img {
+    width: 100%;
+  }
+  .technologyaboutus-listone .listone-text{
+    padding: 0;
+  }
+  .technologyaboutus-listone .technologylistone-text,.technologyaboutus-listone .technologylistone-img {
     width: 100%;
   }
   .speech .speechimg, .speech .speechcenter{

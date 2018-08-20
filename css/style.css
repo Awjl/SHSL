@@ -681,10 +681,54 @@ footer{
 .listone-img {
   width: 45%;
 }
+
+
+.technologyaboutus-nav ul {
+  display: flex;
+  justify-content: center;
+}
+.technologyaboutus-nav ul li {
+  margin: 0 10px;
+  font-size: 16px;
+  color: #4A4A4A;
+  cursor: pointer;
+}
+.technologyaboutus-nav ul li.aboutus-navact {
+  color: #032F7D;
+}
+.technologyaboutus-list .technologyaboutus-listone {
+  justify-content:space-between;
+  flex-wrap: wrap;
+}
+.technologyaboutus-listtwo {
+  justify-content:space-between;
+  flex-wrap: wrap;
+}
+.technologyaboutus-listtwo img {
+  width: 100%;
+}
+.technologyitem {
+  margin-bottom: 30px;
+}
+.technologylistone-text {
+  padding: 50px 0;
+  line-height:25px;
+  color: #4A4A4A;
+  width: 53%;
+}
+.technologylistone-img {
+  width: 45%;
+}
 .show {
   display: flex;
 }
 .hide{
+  display: none;
+}
+.showblock {
+  display: block
+}
+.showhide {
   display: none;
 }
 /* 发展历程 */

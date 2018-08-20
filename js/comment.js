@@ -15,6 +15,11 @@ $('.aboutus-nav ul li').click(function () {
   $('.aboutus-list>div').removeClass('show').addClass('hide')
   $('.aboutus-list>div').eq($(this).index()).removeClass('hide').addClass('show')
 })
+$('.technologyaboutus-nav ul li').click(function () {
+  $(this).addClass('technologyaboutus-navact').siblings().removeClass('technologyaboutus-navact')
+  $('.technologyaboutus-list>div').removeClass('show').addClass('hide')
+  $('.technologyaboutus-list>div').eq($(this).index()).removeClass('hide').addClass('show')
+})
 $('.technologylist-span span').click(function () {
   $(this).addClass('span-act').siblings().removeClass('span-act')
   $('.technologylist>div').removeClass('show').addClass('hide')
@@ -43,3 +48,10 @@ $('.developmentlistbox').on("swipeleft", function () {
 $(".developmentlistbox").on("swiperight", function () {
   alert("You swiped right!");
 });
+
+// 公共
+$('.wrapbox li').click(function() {
+  $(this).addClass('wrapbox-act').siblings().removeClass('wrapbox-act')
+  $('.box>div').removeClass('showblock').addClass('showhide')
+  $('.box>div').eq($(this).index()).removeClass('showhide').addClass('showblock')
+})
