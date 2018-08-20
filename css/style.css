@@ -932,6 +932,7 @@ footer{
   max-width: 1200px;
   width: 100%;
   top: -100px;
+  padding: 20px 0;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -942,7 +943,7 @@ footer{
 .contactusbox .contactusboxitem {
   display: flex;
   align-items: center;
-  height: 100px;
+  height: 60px;
   width: 35%;
   font-size: 16px;
   color: #032F7D;
