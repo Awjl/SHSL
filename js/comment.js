@@ -53,5 +53,5 @@ $(".developmentlistbox").on("swiperight", function () {
 $('.wrapbox li').click(function() {
   $(this).addClass('wrapbox-act').siblings().removeClass('wrapbox-act')
   $('.box>div').removeClass('showblock').addClass('showhide')
-  $('.box>div').eq($(this).index()).removeClass('showhide').addClass('showblock')
+  $('.box>div').eq($(this).index()).removeClass('showhide')
 })

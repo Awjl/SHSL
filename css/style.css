@@ -160,6 +160,7 @@ footer{
 .footeritem p {
   height: 30px;
   line-height: 30px;
+  font-size: 12px;
 }
 .footeritem img {
   max-width: 100px;
@@ -203,9 +204,13 @@ footer{
 
 .wrapbox ul li a{
   color: #fff;
+  padding: 5px;
+
 }
 .wrapbox ul li.wrapbox-act a{ 
-  color: #ddd;
+  padding: 5px 5px;
+  background: #fff;
+  color:#002C76;
 }
 /* 列表 */
 .home-list {
@@ -488,14 +493,6 @@ footer{
   display: flex;
   justify-content:space-between;
   align-items: center;
-}
-.page i{
-  display: block;
-  width: 14px;
-  height: 24px;
-}
-.page i img {
-  height: 100%;;
 }
 .page span {
   display: block;
@@ -790,7 +787,7 @@ footer{
 }
 .line {
   width: 100%;
-  height: 2px;
+  height: 1px;
   background: #002C76;
   margin: 30px 0;
   position: relative;
@@ -798,9 +795,9 @@ footer{
 .linedian{
   position: absolute;
   display: block;
-  width: 6px;
-  height: 6px;
-  top: -2px;
+  width: 7px;
+  height: 7px;
+  top: -3px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -817,7 +814,7 @@ footer{
   width: 30%;
 }
 .speechcenter {
-  width: 60%;
+  width: 67%;
   padding:50px;
 }
 .speechcenter p {
@@ -926,13 +923,13 @@ footer{
 }
 .contactusbox {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   position: absolute;
   max-width: 1200px;
   width: 100%;
   top: -100px;
-  padding: 20px 0;
+  padding: 35px 0;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -944,7 +941,7 @@ footer{
   display: flex;
   align-items: center;
   height: 60px;
-  width: 35%;
+  width: 34%;
   font-size: 16px;
   color: #032F7D;
 }
@@ -955,31 +952,39 @@ footer{
 }
 /* 联系我们 */
 .recruit {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+}
+.recruit>div{
+  width: 48%;
 }
 .recruitbox{
-  width: 48%;
-  height: 60px;
+  width: 100%;
+  height: 57px;
   overflow: hidden;
   transition: all 1s;
 }
-.recruitbox:hover{
-  height: 900px;
-}
-.recruitbox:hover .icon-open{
+
+/* .recruitbox:hover .icon-open{
   background: url(../images/contactus/takeup.png) no-repeat center center;
-}
+} */
 .recruitcenter {
+  height: 250px;
+  overflow-x: auto;
   width: 100%;
-  padding: 40px;
+  padding: 20px 40px 40px;
   background: #F2F2F2;
 }
+
 .recruitcenter p {
   font-size: 14px;
   color: #4A4A4A;
   line-height: 25px;
+}
+.recruitcenter p.name{
+  margin: 10px 0;
+  font-weight: bold;
 }
 .delivery span{
   padding: 5px 0;
@@ -996,22 +1001,25 @@ footer{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #032F7D;
+  border-bottom: 1px solid #032F7D;
   cursor: pointer;
 }
 .recruittitle span{
   display: flex;
   font-size: 16px;
   color: #4A4A4A;
+  font-weight: bold;
 }
 .recruittitle span:nth-child(2){
   font-size: 14px;
   color: #9B9B9B;
+  font-weight: normal;
 }
 .icon-open {
   padding: 0 22px;
   background: url(../images/contactus/open.png) no-repeat center center;
   margin-left: 20px;
+  background-size:30%;
 }
 /* 填写信息 */
 .fill-title{
@@ -1127,24 +1135,23 @@ footer{
   align-items: center;
   justify-content: flex-end;
 }
-.productbox div i{
-  padding: 10px;
-  background: url(../images/sou-act.png) no-repeat center center;
-}
+
 
 .productbox div{
   width: 140px;
   border: 1px solid #9B9B9B;
-  padding: 5px;
+  padding: 5px 10px;
   border-radius: 59px;
+  height: 30px;
+  display: flex;
 }
 .productbox div input {
   width: 90px;
+  margin-left: 5px;
 }
 .productbox span {
   display: block;
-  margin-left: 10px;
-  width: 60px;
+  width: 50px;
   text-align: center;
 }
 .productlist {
