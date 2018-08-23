@@ -162,6 +162,13 @@ footer{
   line-height: 30px;
   font-size: 12px;
 }
+.footeritem p a{
+  color: #fff;
+  padding: 5px 0;
+}
+.footeritem p a:hover{
+  text-decoration:underline;
+}
 .footeritem img {
   max-width: 100px;
 }
@@ -514,6 +521,7 @@ footer{
   text-align: center;
   font-size: 24px;
   color: #4A4A4A;
+  line-height: 35px;
 }
 .newdetails .newdetailsTime{
   width: 300px;
@@ -955,6 +963,7 @@ footer{
   width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .recruit>div{
   width: 48%;
@@ -1201,6 +1210,9 @@ footer{
   padding: 10px;
   background: url(../images/right-act.png) no-repeat center center;
 }
+.productdetails p{
+  line-height: 25px;
+}
 .productdetails-name {
   font-size: 40px;
   color: #4A4A4A;
@@ -1232,6 +1244,7 @@ footer{
   color: #4A4A4A;
   font-weight: bold;
   width: 70%;
+  line-height: 20px;
 }
 .productdetails ul li a{
   font-size: 14px;

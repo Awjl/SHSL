@@ -19,10 +19,12 @@
 }
 @media screen and (max-width: 1160px){
   .home-list .item-big{
+    margin-bottom: 20px;
     width: 100%
   }
   .home-list .item-litter{
     width: 50%;
+    margin-bottom: 20px;
   }
 }
 /*
@@ -154,6 +156,9 @@
   .brand .brand-list , .brand .brand-video {
     width: 100%;
   }
+  .brand .brand-list {
+    padding:0 10px;
+  }
   .branditem .brand-name{
     margin: 10px 0;
   }
@@ -181,8 +186,11 @@
   .honor .honorlist {
     width: 49%;
   }
+  .contactusbox {
+    top: -140px !important;
+  }
   .contactusbox .contactusboxitem {
-    width: 45% !important;
+    width: 80% !important;
   }
   .recruit .recruitbox{
     width: 98%;
@@ -200,6 +208,27 @@
   }
   .developmentItembox .developmentItem{
     width:350px;
+  }
+  .recruit>div {
+    width: 100% !important;
+  }
+  .footeritem p {
+    height: 26px !important;
+    line-height: 26px !important;
+  }
+  .home-list{
+    margin-top: 25px !important;
+  }
+  .wrap-nav {
+    height: 65px !important;
+    margin-bottom: -33px !important;
+  }
+  .wrapbox {
+    height: 65px !important;
+  }
+  .wrapbox ul li {
+    height: 65px !important;
+    line-height: 65px !important;
   }
 }
 /*
