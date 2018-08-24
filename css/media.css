@@ -182,6 +182,7 @@
   }
   .speech .speechimg, .speech .speechcenter{
     width: 100%;
+    padding: 14px;
   }
   .honor .honorlist {
     width: 49%;
@@ -190,7 +191,14 @@
     top: -140px !important;
   }
   .contactusbox .contactusboxitem {
-    width: 80% !important;
+    width: 85% !important;
+    height: 50px !important;
+    font-size: 14px !important;
+    font-weight: bold;
+  }
+  .contactusbox .contactusboxitem img {
+    width: 20px !important;
+    height: 20px !important;
   }
   .recruit .recruitbox{
     width: 98%;
@@ -207,7 +215,16 @@
     display: none;
   }
   .developmentItembox .developmentItem{
-    width:350px;
+    width:170px;
+  }
+  .developmentName {
+    font-size: 24px !important;
+  }
+  .developmentCenter{
+    padding: 0 10% !important;
+    font-size: 12px !important;
+    line-height: 20px;
+    letter-spacing: 2px !important;
   }
   .recruit>div {
     width: 100% !important;
@@ -229,6 +246,9 @@
   .wrapbox ul li {
     height: 65px !important;
     line-height: 65px !important;
+  }
+  .newlist {
+    padding: 10px !important;
   }
 }
 /*
