@@ -63,6 +63,9 @@
   .footerbox .footeritem {
     width: 25% !important;
   }
+  .footeritemimg {
+    margin:0 60px;
+  }
   .solution .solutionitem {
     width: 49%;
   }
@@ -230,8 +233,8 @@
     width: 100% !important;
   }
   .footeritem p {
-    height: 26px !important;
-    line-height: 26px !important;
+    height: 24px !important;
+    line-height: 24px !important;
   }
   .home-list{
     margin-top: 25px !important;
@@ -249,6 +252,30 @@
   }
   .newlist {
     padding: 10px !important;
+  }
+  .producitem-name p:nth-child(1) {
+    font-size: 18px !important;
+  }
+  .productdetails-name {
+    font-size: 18px !important;
+    font-weight: bold;
+  }
+  .productclassification-title {
+    font-size: 18px !important;
+    font-weight: bold;
+  }
+  .one-title {
+    font-size: 16px !important;
+  }
+  .newdetails .newdetailstitel {
+    font-size: 18px !important;
+    font-weight: bold;
+  }
+  .newdetails .newdetailsTime{
+    font-size: 14px !important;
+  }
+  .footerbox{
+    justify-content:flex-start !important;
   }
 }
 /*

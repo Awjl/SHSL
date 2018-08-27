@@ -438,11 +438,13 @@ footer{
 .newlist {
   padding: 40px;
   box-sizing: border-box;
+  border-bottom: 1px solid #E3E3E3;
+  cursor: pointer;
+}
+.newlist a {
   display: flex;
   justify-content:space-between;
   flex-wrap: wrap;
-  border-bottom: 1px solid #E3E3E3;
-  cursor: pointer;
 }
 .newlist:hover {
  background: #FFFFFF;
@@ -462,10 +464,12 @@ footer{
   flex-wrap: wrap;
 }
 .newContentTitle span:nth-child(1){
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: bold;
   color: #4A4A4A;
   width: 70%;
   height: 25px;
+  line-height: 25px;
   white-space:nowrap;
   overflow:hidden;
   text-overflow:ellipsis;
@@ -473,6 +477,7 @@ footer{
 .newContentTitle span:nth-child(2){
   width:30%;
   height: 25px;
+  line-height: 25px;
   font-size: 14px;
   color: #4A4A4A;
   text-align: right;
@@ -1222,10 +1227,14 @@ footer{
   color: #4A4A4A;
   margin-bottom: 30px;
 }
+.producitem-name p:nth-child(2) {
+  width: 100px;
+}
 .producitem-name p:nth-child(2) a{
   font-size: 14px;
   color: #002C76;
   width: 100px;
+  padding: 20px 0;
 }
 .icon-mover {
   padding: 10px;
@@ -1301,6 +1310,7 @@ footer{
 .icon-back {
   padding: 10px;
   background: url(../images/solution/back.png) no-repeat center center;
+  background-size: 40%;
 }
 .updown a{
   color: #4A4A4A;
